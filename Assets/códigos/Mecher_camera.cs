@@ -13,7 +13,7 @@ public class Mecher_camera : MonoBehaviour
     float mousex;
     float mousey;
 
-    float multiplier = 0.05f;
+    float multiplier = 2.05f;
 
     float xRotation;
     float yRotation;

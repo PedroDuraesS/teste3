@@ -10,10 +10,15 @@ public class FirstPersonCamera : MonoBehaviour
     float rotationX = 0;
     float rotationY = 0;
 
+    Camera cam;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        cam = GetComponentInChildren<Camera>();
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void LateUpdate()

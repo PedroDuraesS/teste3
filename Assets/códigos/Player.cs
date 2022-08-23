@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     float movimento_vertical;
     Vector3 direcao;
     Rigidbody rb;
+    [SerializeField] private KeyCode Correr;
 
     private void Start(){
 
@@ -45,6 +46,15 @@ public class Player : MonoBehaviour
     private void FixedUpdate(){
 
         movimentacao();
+        
+        if(Input.GetKey(Correr)&&Input.GetKey(KeyCode.W))
+        {
+            velocidade = 50f;
+        }
+        else
+        {
+            velocidade = 25f;
+        }
 
     }
 
@@ -58,6 +68,7 @@ public class Player : MonoBehaviour
     void Atrito(){
 
         rb.drag = rbAtrito;
+        
 
     }
 
