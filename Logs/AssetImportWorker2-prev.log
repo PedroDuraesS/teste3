@@ -10,7 +10,7 @@ Available memory:        7683 MB
 Using pre-set license
 Pro License: YES
 
-(Unity:5909): Gdk-CRITICAL **: 10:20:40.760: gdk_window_get_cursor: assertion 'GDK_IS_WINDOW (window)' failed
+(Unity:7569): Gdk-CRITICAL **: 10:35:41.785: gdk_window_get_cursor: assertion 'GDK_IS_WINDOW (window)' failed
 Desktop is 1920 x 1080 @ 60 Hz
 Initialize udev device monitor.
 
@@ -20,11 +20,11 @@ Unity
 -batchMode
 -noUpm
 -name
-AssetImportWorker1
+AssetImportWorker2
 -projectPath
 /home/aluno/Documentos/ProjetosUnity/teste3
 -logFile
-Logs/AssetImportWorker1.log
+Logs/AssetImportWorker2.log
 -srvPort
 41383
 Successfully changed project path to: /home/aluno/Documentos/ProjetosUnity/teste3
@@ -58,7 +58,7 @@ Successfully changed project path to: /home/aluno/Documentos/ProjetosUnity/teste
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 99,06 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 216,41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2021.3.4f1 (cb45f9cae8b7)
 [Subsystems] Discovering subsystems at path /home/aluno/Unity/Hub/Editor/2021.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -74,209 +74,97 @@ int_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program
 L_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewpor
 t_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_memory_object GL_EXT_memory_object_fd GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_t
 exture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -772661760
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1109594912
 Initialize mono
 Mono path[0] = '/home/aluno/Unity/Hub/Editor/2021.3.4f1/Editor/Data/Managed'
 Mono path[1] = '/home/aluno/Unity/Hub/Editor/2021.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/aluno/Unity/Hub/Editor/2021.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56909
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56569
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/aluno/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /home/aluno/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,004732 seconds.
+Registered in 0,059055 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 88,54 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 86,45 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0,608 seconds
+- Completed reload, in  2,081 seconds
 Domain Reload Profiling:
-	ReloadAssembly (608ms)
-		BeginReloadAssembly (45ms)
+	ReloadAssembly (2081ms)
+		BeginReloadAssembly (926ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (462ms)
-			LoadAssemblies (44ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (935ms)
+			LoadAssemblies (931ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (106ms)
+			SetupTypeCache (348ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (278ms)
+			SetupLoadedEditorAssemblies (421ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (89ms)
+				InitializePlatformSupportModulesInManaged (43ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (86ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (132ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (83ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0,003345 seconds.
+Registered in 0,254657 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /home/aluno/Documentos/ProjetosUnity/teste3/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /home/aluno/Documentos/ProjetosUnity/teste3/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0,63 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0,65 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1,139 seconds
+- Completed reload, in  3,768 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1139ms)
-		BeginReloadAssembly (101ms)
+	ReloadAssembly (3768ms)
+		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (914ms)
-			LoadAssemblies (63ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (3205ms)
+			LoadAssemblies (1711ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (326ms)
+			SetupTypeCache (626ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (69ms)
-			SetupLoadedEditorAssemblies (395ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (762ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (265ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				ProcessInitializeOnLoadAttributes (580ms)
+				ProcessInitializeOnLoadMethodAttributes (81ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0,63 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.37 seconds
+Refreshing native plugins compatible for Editor in 0,67 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 3776 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (59,8 KB). Loaded Objects now: 4252.
-Memory consumption went from 142,6 MB to 142,5 MB.
-Total: 5,171675 ms (FindLiveObjects: 0,340659 ms CreateObjectMapping: 0,484639 ms MarkObjects: 4,190805 ms  DeleteObjects: 0,153989 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,002686 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /home/aluno/Documentos/ProjetosUnity/teste3/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /home/aluno/Documentos/ProjetosUnity/teste3/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0,58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1,012 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1012ms)
-		BeginReloadAssembly (110ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (812ms)
-			LoadAssemblies (51ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (277ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (369ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (55ms)
-				ProcessInitializeOnLoadAttributes (243ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1,86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 3737 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (48,0 KB). Loaded Objects now: 4255.
-Memory consumption went from 139,1 MB to 139,0 MB.
-Total: 5,910928 ms (FindLiveObjects: 0,523812 ms CreateObjectMapping: 0,276351 ms MarkObjects: 4,859375 ms  DeleteObjects: 0,246209 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0,002815 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /home/aluno/Documentos/ProjetosUnity/teste3/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /home/aluno/Documentos/ProjetosUnity/teste3/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1,02 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0,974 seconds
-Domain Reload Profiling:
-	ReloadAssembly (975ms)
-		BeginReloadAssembly (103ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (781ms)
-			LoadAssemblies (46ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (269ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (351ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (56ms)
-				ProcessInitializeOnLoadAttributes (226ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2,78 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 3737 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (43,5 KB). Loaded Objects now: 4258.
-Memory consumption went from 139,1 MB to 139,0 MB.
-Total: 7,708391 ms (FindLiveObjects: 0,354748 ms CreateObjectMapping: 0,262727 ms MarkObjects: 6,236980 ms  DeleteObjects: 0,851801 ms)
+Unloading 26 unused Assets / (73,2 KB). Loaded Objects now: 4253.
+Memory consumption went from 142,6 MB to 142,6 MB.
+Total: 4,193990 ms (FindLiveObjects: 0,348028 ms CreateObjectMapping: 0,323672 ms MarkObjects: 3,353224 ms  DeleteObjects: 0,167129 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -289,46 +177,52 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1961,503251 seconds.
-  path: Assets/Mapa/TerrainData_51c0e28e-7d8b-400d-b256-7b4a3b44a2c1.asset
-  artifactKey: Guid(f2234663c88691673a55afd11fafcc26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapa/TerrainData_51c0e28e-7d8b-400d-b256-7b4a3b44a2c1.asset using Guid(f2234663c88691673a55afd11fafcc26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7532ea54e587d4298a549dc05e99c05') in 0,122381 seconds 
+  Time since last request: 2041,359322 seconds.
+  path: Assets/MaterialTEXT
+  artifactKey: Guid(fb460bcac494cbffcad816b8bfc0ac6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaterialTEXT using Guid(fb460bcac494cbffcad816b8bfc0ac6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0b869d81bf0ff73fdbf1186086998f') in 0,009070 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0,705996 seconds.
-  path: Assets/preFabs/Inimigo.prefab
-  artifactKey: Guid(3a728f6bcf1da93fea180672f56e1e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/preFabs/Inimigo.prefab using Guid(3a728f6bcf1da93fea180672f56e1e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c688e7d0bd858b67ceb8141732c6da') in 0,330679 seconds 
+  Time since last request: 1,510355 seconds.
+  path: Assets/ProBuilder Data
+  artifactKey: Guid(548cd726164e285a3b7bc89c77ae2f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProBuilder Data using Guid(548cd726164e285a3b7bc89c77ae2f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6feefa163f43fecf4a2da821d991f9b4') in 0,000933 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1,734982 seconds.
-  path: Assets/Blocks.Menu/Back.png
-  artifactKey: Guid(df85a6b27b8a743f8a145f6b4f397506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blocks.Menu/Back.png using Guid(df85a6b27b8a743f8a145f6b4f397506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd47933fd828924a63cf76248c18d92a') in 0,124275 seconds 
+  Time since last request: 0,061081 seconds.
+  path: Assets/ProBuilder Data/Default Color Palette.asset
+  artifactKey: Guid(b82ddc619a48937a4807fd3296742a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProBuilder Data/Default Color Palette.asset using Guid(b82ddc619a48937a4807fd3296742a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09915f263e14002c07f1e4292d52edd6') in 0,063653 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0,000029 seconds.
-  path: Assets/Blocks.Menu/cenario.png
-  artifactKey: Guid(c91adb51390cdd51b93b1f12d59fd1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blocks.Menu/cenario.png using Guid(c91adb51390cdd51b93b1f12d59fd1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a722e7abea336cbc599f5e2845de02') in 0,128477 seconds 
+  Time since last request: 218,538606 seconds.
+  path: Assets/Blocks.Menu/pixil-frame-0(1).png
+  artifactKey: Guid(70691c4b54c5a346a9e0773b73502dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blocks.Menu/pixil-frame-0(1).png using Guid(70691c4b54c5a346a9e0773b73502dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9d2256cfed25c2d747eb865d90b525') in 0,068472 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0,000020 seconds.
-  path: Assets/Blocks.Menu/Button_Quit.png
-  artifactKey: Guid(a10a7908f36ae228c8f4382e36ed6d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blocks.Menu/Button_Quit.png using Guid(a10a7908f36ae228c8f4382e36ed6d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfac0dbf5b710569e2bab844ff6e8938') in 0,126644 seconds 
+  Time since last request: 34,961656 seconds.
+  path: Assets/Blocks.Menu/pixil-frame-0(1).png
+  artifactKey: Guid(70691c4b54c5a346a9e0773b73502dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blocks.Menu/pixil-frame-0(1).png using Guid(70691c4b54c5a346a9e0773b73502dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f35143313cdaa30e72057eaf9ee7f51') in 0,018455 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0,000014 seconds.
-  path: Assets/Blocks.Menu/Button_options.png
-  artifactKey: Guid(3b2838914239f47d4a67dabc61499b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blocks.Menu/Button_options.png using Guid(3b2838914239f47d4a67dabc61499b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b62bd1bc584ffbb6cfe921731ba2e806') in 0,503834 seconds 
+  Time since last request: 10,882062 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572db614fb1388716ed626f98f682063') in 1,680104 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0,000026 seconds.
-  path: Assets/Blocks.Menu/Button_play.png
-  artifactKey: Guid(84a1a221a9d7759b2842fe91d4a1d22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blocks.Menu/Button_play.png using Guid(84a1a221a9d7759b2842fe91d4a1d22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819a4d9401e28c794fc21ac88f094842') in 0,196722 seconds 
+  Time since last request: 0,000061 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ac8324015aa59e73339edaf5f84f4b') in 0,100364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0,000045 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4b59350c0487f47f8ce8a4e3a29ed3') in 0,074171 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
@@ -538,7 +432,7 @@ Memory Statistics:
     [ALLOC_TEMP_Background Job.Worker 0]
       Initial Block Size 32,0 KB
       Current Block Size 44,0 KB
-      Peak Allocated Bytes 19,5 KB
+      Peak Allocated Bytes 25,2 KB
       Overflow Count 0
     [ALLOC_TEMP_Job.Worker 10]
       Initial Block Size 256,0 KB
@@ -597,7 +491,7 @@ Memory Statistics:
       Overflow Count 0
     [ALLOC_TEMP_MAIN]
       Initial Block Size 16,0 MB
-      Current Block Size 18,0 MB
+      Current Block Size 17,6 MB
       Peak Allocated Bytes 14,9 MB
       Overflow Count 0
     [ALLOC_TEMP_CoreBusinessMetricsCache]
@@ -609,11 +503,6 @@ Memory Statistics:
       Initial Block Size 64,0 KB
       Current Block Size 64,0 KB
       Peak Allocated Bytes 32,6 KB
-      Overflow Count 0
-    [ALLOC_TEMP_Loading.PreloadManager] x 2
-      Initial Block Size 32,0 MB
-      Current Block Size 32,0 MB
-      Peak Allocated Bytes 0 B
       Overflow Count 0
     [ALLOC_TEMP_Profiler.Dispatcher]
       Initial Block Size 64,0 KB
@@ -627,11 +516,11 @@ Memory Statistics:
       Overflow Count 0
 [ALLOC_MEMORYPROFILER]
   Requested Block Size 1,0 MB
-  Peak Block count 2
-  Peak Allocated memory 0,8 MB
+  Peak Block count 1
+  Peak Allocated memory 0,7 MB
   Peak Large allocation bytes 0 B
 [ALLOC_DEFAULT] Dual Thread Allocator
-  Peak main deferred allocation count 24
+  Peak main deferred allocation count 20
     [ALLOC_BUCKET]
       Large Block size 32,0 MB
       Used Block count 1
@@ -639,12 +528,12 @@ Memory Statistics:
     [ALLOC_DEFAULT_MAIN]
       Requested Block Size 16,0 MB
       Peak Block count 4
-      Peak Allocated memory 51,2 MB
+      Peak Allocated memory 50,9 MB
       Peak Large allocation bytes 0 B
     [ALLOC_DEFAULT_THREAD]
       Requested Block Size 16,0 MB
       Peak Block count 1
-      Peak Allocated memory 444,1 KB
+      Peak Allocated memory 426,9 KB
       Peak Large allocation bytes 0 B
 [ALLOC_TEMP_JOB_1_FRAME]
   Initial Block Size 2,0 MB
@@ -663,7 +552,7 @@ Memory Statistics:
   Overflow Count (full) 0
 [ALLOC_TEMP_JOB_ASYNC (Background)]
   Initial Block Size 1,0 MB
-  Used Block Count 2
+  Used Block Count 1
   Overflow Count (too large) 0
   Overflow Count (full) 0
 [ALLOC_GFX] Dual Thread Allocator
@@ -675,7 +564,7 @@ Memory Statistics:
     [ALLOC_GFX_MAIN]
       Requested Block Size 16,0 MB
       Peak Block count 1
-      Peak Allocated memory 6,3 MB
+      Peak Allocated memory 2,8 MB
       Peak Large allocation bytes 0 B
     [ALLOC_GFX_THREAD]
       Requested Block Size 16,0 MB
@@ -722,7 +611,7 @@ Memory Statistics:
     [ALLOC_PROFILER_BUCKET]
       Large Block size 32,0 MB
       Used Block count 1
-      Peak Allocated bytes 336 B
+      Peak Allocated bytes 368 B
 [ALLOC_PROFILER_EDITOR]
   Requested Block Size 1,0 MB
   Peak Block count 0
@@ -731,5 +620,5 @@ Memory Statistics:
     [ALLOC_PROFILER_BUCKET]
       Large Block size 32,0 MB
       Used Block count 1
-      Peak Allocated bytes 336 B
-##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1661261799443,"processId":5909,"allocatedMemory":57772478,"memoryLabels":[{"Default":36027},{"Permanent":17968},{"Thread":1097736},{"Manager":1394173},{"VertexData":60068},{"Geometry":576},{"Particles":17856},{"VFX":768},{"Texture":74145},{"Shader":221577},{"Material":8372},{"GfxDevice":230120},{"Animation":15006},{"Audio":4508},{"Font":1400},{"Physics":272317},{"Physics2D":152912},{"Serialization":6715469},{"Input":59504},{"JobScheduler":576},{"GarbageCollector":1049152},{"Mono":92},{"ScriptingNativeRuntime":43520},{"BaseObject":1818187},{"Resource":1180},{"Renderer":8280},{"Transform":48},{"File":12460},{"Network":3032},{"WebCam":24},{"Culling":48},{"Terrain":1065},{"TerrainPhysics":8},{"Wind":24},{"STL":539136},{"String":28421331},{"DynamicArray":3772326},{"HashMap":1719678},{"Utility":2372770},{"Curl":1112},{"PoolAlloc":495272},{"AI":59616},{"TypeTree":2064},{"ScriptManager":1766472},{"RuntimeInitializeOnLoadManager":72},{"AncestorCache":32},{"SpriteAtlas":112},{"GI":15312},{"Unet":16},{"Director":7816},{"WebRequest":720},{"VR":45921},{"SceneManager":640},{"Video":256},{"LazyScriptCache":32},{"ManagedAttributeManager":1},{"TextureStreaming":1416},{"NativeArray":12},{"ScreenCapture":8},{"Camera":25},{"Secure":1},{"CrashReporter":968},{"SerializationCache":624},{"APIUpdating":5872},{"Subsystems":384},{"VirtualTexturing":59424},{"StaticSafetyDebugInfo":327752},{"EditorGui":8084},{"EditorUtility":18255},{"VersionControl":1156},{"Undo":450},{"AssetDatabase":4443036},{"AssetImporter":272053},{"RestService":5994},{"EditorGi":23704},{"ProgressiveLightmapper":10832},{"License":48},{"UnityConnect":28584},{"Collab":641},{"Upm":1128},{"DrivenProperties":80},{"HubClient":32},{"LocalIPC":119},{"ProfilerEditor":20157},{"CoreBusinessMetrics":2702},{"AssetReference":32}]}
+      Peak Allocated bytes 368 B
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1661262143349,"processId":7569,"allocatedMemory":57995027,"memoryLabels":[{"Default":36027},{"Permanent":17968},{"Thread":1097720},{"Manager":1394261},{"VertexData":91100},{"Geometry":744},{"Particles":17856},{"VFX":768},{"Texture":84801},{"Shader":225417},{"Material":7216},{"GfxDevice":229968},{"Animation":15006},{"Audio":4508},{"Font":1400},{"FontEngine":4096},{"Physics":267965},{"Physics2D":152912},{"Serialization":6880276},{"Input":59504},{"JobScheduler":576},{"GarbageCollector":1049152},{"Mono":92},{"ScriptingNativeRuntime":43520},{"BaseObject":1812849},{"Resource":1180},{"Renderer":8856},{"Transform":48},{"File":12496},{"Network":3032},{"WebCam":24},{"Culling":48},{"Terrain":1065},{"TerrainPhysics":8},{"Wind":24},{"STL":550656},{"String":28418063},{"DynamicArray":3771234},{"HashMap":1725934},{"Utility":2372770},{"Curl":1112},{"PoolAlloc":496352},{"AI":59616},{"TypeTree":2064},{"ScriptManager":1766528},{"RuntimeInitializeOnLoadManager":72},{"AncestorCache":32},{"SpriteAtlas":112},{"GI":15312},{"Unet":16},{"Director":7816},{"WebRequest":720},{"VR":45921},{"SceneManager":640},{"Video":256},{"LazyScriptCache":32},{"ManagedAttributeManager":1},{"TextureStreaming":1416},{"NativeArray":12},{"ScreenCapture":8},{"Camera":25},{"Secure":1},{"CrashReporter":968},{"SerializationCache":624},{"APIUpdating":5872},{"Subsystems":384},{"VirtualTexturing":59424},{"StaticSafetyDebugInfo":327752},{"EditorGui":8084},{"EditorUtility":18255},{"VersionControl":4},{"Undo":450},{"AssetDatabase":4447900},{"AssetImporter":272053},{"RestService":5994},{"EditorGi":23704},{"ProgressiveLightmapper":10832},{"License":48},{"UnityConnect":28584},{"Collab":641},{"Upm":1128},{"DrivenProperties":80},{"HubClient":32},{"LocalIPC":119},{"ProfilerEditor":20157},{"CoreBusinessMetrics":2702},{"AssetReference":32}]}
