@@ -10,66 +10,81 @@ public class Player : MonoBehaviour
     public int vida = 100;
 
 	[Header("Movement")]
+    [SerializeField] private float moveSpeed = 7.5f;
+    [SerializeField] private float runSpeed = 11.5f;
+    [SerializeField] private float jumpSpeed = 8.0f;
+    [SerializeField] private float gravity = 10.0f;
+    [SerializeField] Transform playerBody;
+    [SerializeField] private Camera playerCamera;
 
-    public float velocidade = 6f;
-    public float aceleracao = 10f;
-    public float rbAtrito = 6f;
-    public Transform orientacao;
-    float movimento_horizontal;
-    float movimento_vertical;
-    Vector3 direcao;
-    Rigidbody rb;
-    [SerializeField] private KeyCode Correr;
+    private float mouseX;
+    private float mouseY;
+    private float mouseSensitivity = 100f;
+    private float xRotation = 0f;
 
-    private void Start(){
+    private CharacterController characterController;
+    private Vector3 moveDirection = Vector3.zero;
 
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
+    private Vector3 _forward;
+    private Vector3 _right;
 
+    private bool isRunning;
+
+    private float curSpeedX;
+    private float curSpeedY;
+
+    private float movementDirectionY;
+
+    [HideInInspector]
+    public bool canMove = true;
+
+    void Start()
+    {
+        characterController = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
-    private void Update(){
+    void Update()
+    {
+        _forward = transform.TransformDirection(Vector3.forward);
+        _right = transform.TransformDirection(Vector3.right);
 
-        Entrada_dados();
-        Atrito();
+        isRunning = Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W);
+        curSpeedX = canMove ? (isRunning ? runSpeed : moveSpeed) * Input.GetAxis("Vertical") : 0;
+        curSpeedY = canMove ? (isRunning ? runSpeed : moveSpeed) * Input.GetAxis("Horizontal") : 0;
+        movementDirectionY = moveDirection.y;
+        moveDirection = (_forward * curSpeedX) + (_right * curSpeedY);
 
-    }
-
-
-    void Entrada_dados(){
-
-        movimento_horizontal = Input.GetAxisRaw("Horizontal");
-        movimento_vertical = Input.GetAxisRaw("Vertical");
-
-    }
-
-    private void FixedUpdate(){
-
-        movimentacao();
-        
-        if(Input.GetKey(Correr)&&Input.GetKey(KeyCode.W))
+        if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
-            velocidade = 50f;
+            moveDirection.y = jumpSpeed;
         }
         else
         {
-            velocidade = 25f;
+            moveDirection.y = movementDirectionY;
         }
 
+        if (!characterController.isGrounded)
+        {
+            moveDirection.y -= gravity * Time.deltaTime;
+        }
+
+        if (canMove)
+        {
+            mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+            mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+
+            xRotation -= mouseY;
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+            playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            playerBody.Rotate(Vector3.up * mouseX);
+        }
     }
 
-    void movimentacao(){
-
-        direcao = orientacao.forward * movimento_vertical + orientacao.right * movimento_horizontal;
-        rb.AddForce(direcao.normalized * velocidade * aceleracao, ForceMode.Acceleration);
-
+    private void FixedUpdate()
+    {
+        characterController.Move(moveDirection);
     }
-
-    void Atrito(){
-
-        rb.drag = rbAtrito;
-        
-
-    }
-
 }

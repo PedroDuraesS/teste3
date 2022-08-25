@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mecher_camera : MonoBehaviour
 {
-    // Start is called before the first frame update
+    /*// Start is called before the first frame update
     [SerializeField] private float sensx;
     [SerializeField] private float sensy;
 
@@ -47,5 +47,5 @@ public class Mecher_camera : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
         
     }
-
+*/
 }

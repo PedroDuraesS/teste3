@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FirstPersonCamera : MonoBehaviour
 {
-    public Transform characterBody;
+    /*public Transform characterBody;
     public Transform characterHead;
 
     float rotationX = 0;
@@ -37,5 +37,5 @@ public class FirstPersonCamera : MonoBehaviour
 
         transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
 
-    }
+    }*/
 }

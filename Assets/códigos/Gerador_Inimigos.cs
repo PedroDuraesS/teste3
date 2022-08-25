@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Gerador_Inimigos : MonoBehaviour {
-
+    
     [SerializeField] private GameObject inimigo;
     private float momentoDaUltimaGeracao;
     private int numInimigos = 0;
